@@ -1,0 +1,23 @@
+**********
+Day 1
+**********
+
+__GIT branches__
+
+Fork and clone this public repo, this repository currently has 3 branches.
+1. master - Main production
+2. dev - All dev commit would go to this branch
+3. presentation - All presentation and design collateral be pushed to this branch
+
+Push your commits to the branch that best fits your workload.
+
+__Research Assignment__
+1. Whats a DAO - assigned to everyone
+2. Test the Covalent Api - assigned to Ayomide
+3. Examples of Similar projects (main reference https://deepdao.io/) - assigned to Isaac & Juliet
+4. UI / UX - Amarachi & Ukeme
+5. Key Features research
+    - Member and DAO token holdings and token concentrations (assigned to Isaac)
+    - Voting power concentration vs decentralization (assigned to Ayomide)
+    - DAO sentiment analysis based on tweets and other social media messages (assigned to Ukeme)
+    - The overall activity of a DAO (assigned to Juliet & Amarachi)
