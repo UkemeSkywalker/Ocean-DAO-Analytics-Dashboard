@@ -12,6 +12,7 @@ Fork and clone this public repo, this repository currently has 3 branches.
 Push your commits to the branch that best fits your workload.
 
 __Research Assignment__
+
 1. Whats a DAO - assigned to everyone
 2. Test the Covalent Api - assigned to Ayomide
 3. Examples of Similar projects (main reference https://deepdao.io/) - assigned to Isaac & Juliet
