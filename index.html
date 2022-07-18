@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!---- Website Information ---->
-    <title>ENFTX - NFT Dashboard HTML Template</title>
+    <title>OCEAN DAO ANALYTICS</title>
     <meta name="description"
-        content="ENFTX is the complete UX & UI dashboard for NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc.">
+        content="Discover, Access, Interact with the Awesomeness of DAO With The Covalent API">
 
 
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/Ocean DAO.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/OceanDAO.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -28,7 +28,7 @@
             <div class="col-xxl-12">
                 <div class="header-content">
                     <div class="header-left">
-                        <div class="brand-logo"><a class="mini-logo" href="index.html"><img src="images/Ocean DAO.png" alt=""
+                        <div class="brand-logo"><a class="mini-logo" href="index.html"><img src="images/OceanDAO.png" alt=""
                                     width="40"></a></div>
                         <div class="search">
                             <form action="#"><span><i class="ri-search-line"></i></span><input type="text"
@@ -36,7 +36,6 @@
                         </div>
                     </div>
                     <div class="header-right">
-                        <!-- <div class="theme-switch"><i class="ri-sun-line"></i></div> -->
 
                         <div class="dark-light-toggle theme-switch" onclick="themeToggle()">
                             <span class="dark"><i class="ri-moon-line"></i></span>
@@ -50,7 +49,7 @@
     </div>
 </div>
     <div class="sidebar">
-    <div class="brand-logo"><a class="full-logo" href="index.html"><img src="images/Ocean DAO.png" alt="" width="30"></a></div>
+    <div class="brand-logo"><a class="full-logo" href="index.html"><img src="images/OceanDAO.png" alt="" width="30"></a></div>
     <div class="menu">
         <ul>
             <li>
@@ -69,8 +68,10 @@
                     <div class="promotion d-flex justify-content-between align-items-center">
                         <div class="promotion-detail">
                             <h1 class="text-white mb-3">OCEAN DAO ANALYTICS</h1>
-                            <p>The best place to get anything you need to know about DAO</p><a
-                                class="btn btn-primary me-3">Explore</a><a class="btn btn-secondary">Create</a>
+                            <h3>Discover, Access, &amp; Interact with the Awesomeness of DAO</h3>
+                            <p><strong>through the Covalent API</strong></p>
+                            <a
+                                class="btn btn-primary me-3" href="#explore">Explore</a><a class="btn btn-secondary">Create</a>
                         </div>
                     </div>
                 </div>
@@ -118,8 +119,8 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-6">
                         <div class="page-title-content">
-                            <h3>Bids</h3>
-                            <p class="mb-2">Welcome ENFTX Bids page</p>
+                            <h3>Welcome Ocean DAO Analytics</h3>
+                            <p class="mb-2"></p>
                         </div>
                     </div>
                     <div class="col-auto">
@@ -128,8 +129,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-3 col-sm-6">
+            <div class="row" >
+            <div id="totalContainer" class="row">
+
+                <!-- <div class="col-xl-3 col-sm-6">
                     <div class="stat-widget d-flex align-items-center">
                         <div class="widget-icon me-3 bg-primary"><span><i class="ri-file-copy-2-line"></i></span></div>
                         <div class="widget-content">
@@ -164,11 +167,12 @@
                             <p>Canceled</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
+            </div>
                 <div class="col-xl-12">
                     <div class="card">
                         <div class="card-header ">
-                            <h6 class="card-title">TOP 5 DAO Account</h6>
+                            <h6 class="card-title " id="explore">TOP 5 DAO Account</h6>
                         </div>
                         <div class="card-body p-0 bs-0 bg-transparent">
                             <div class="bid-table">
@@ -180,290 +184,20 @@
                                                     <div class="form-check"><input class="form-check-input"
                                                             type="checkbox" id="flexCheckDefault" value=""></div>
                                                 </th>
-                                                <th>Item List</th>
-                                                <th>Open Price</th>
-                                                <th>Your Offer</th>
-                                                <th>Recent Offer</th>
-                                                <th>Time Left</th>
-                                                <th>Action</th>
+                                                <th>List</th>
+                                                <th>DAO</th>
+                                                <th>Symbol</th>
+                                                <th>Organization</th>
+                                                <th>Coin Price</th>
+                                                <th>Decimal</th>
+                                                <th>Contract Address</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check"><input class="form-check-input"
-                                                            type="checkbox" id="flexCheckDefault" value=""></div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><img
-                                                            src="images/items/15.jpg" alt="" width="60"
-                                                            class="me-3 rounded">
-                                                        <div class="flex-grow-1">
-                                                            <h6 class="mb-0">Cutes Cube Cool</h6>
-                                                            <p class="mb-0">John Abraham</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>0.0025 ETH</td>
-                                                <td> 0.0025 ETH</td>
-                                                <td><img src="images/avatar/1.jpg" alt="" width="40"
-                                                        class="me-2 rounded-circle">0.0025 ETH</td>
-                                                <td>2 Hours 1 min 30s</td>
-                                                <td><span><i class="ri-close-line me-3"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check"><input class="form-check-input"
-                                                            type="checkbox" id="flexCheckDefault" value=""></div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><img
-                                                            src="images/items/16.jpg" alt="" width="60"
-                                                            class="me-3 rounded">
-                                                        <div class="flex-grow-1">
-                                                            <h6 class="mb-0">Cutes Cube Cool</h6>
-                                                            <p class="mb-0">John Abraham</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>0.0025 ETH</td>
-                                                <td> 0.0025 ETH</td>
-                                                <td><img src="images/avatar/2.jpg" alt="" width="40"
-                                                        class="me-2 rounded-circle">0.0025 ETH</td>
-                                                <td>2 Hours 1 min 30s</td>
-                                                <td><span><i class="ri-close-line me-3"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check"><input class="form-check-input"
-                                                            type="checkbox" id="flexCheckDefault" value=""></div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><img
-                                                            src="images/items/17.jpg" alt="" width="60"
-                                                            class="me-3 rounded">
-                                                        <div class="flex-grow-1">
-                                                            <h6 class="mb-0">Cutes Cube Cool</h6>
-                                                            <p class="mb-0">John Abraham</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>0.0025 ETH</td>
-                                                <td> 0.0025 ETH</td>
-                                                <td><img src="images/avatar/3.jpg" alt="" width="40"
-                                                        class="me-2 rounded-circle">0.0025 ETH</td>
-                                                <td>2 Hours 1 min 30s</td>
-                                                <td><span><i class="ri-close-line me-3"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check"><input class="form-check-input"
-                                                            type="checkbox" id="flexCheckDefault" value=""></div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><img
-                                                            src="images/items/18.jpg" alt="" width="60"
-                                                            class="me-3 rounded">
-                                                        <div class="flex-grow-1">
-                                                            <h6 class="mb-0">Cutes Cube Cool</h6>
-                                                            <p class="mb-0">John Abraham</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>0.0025 ETH</td>
-                                                <td> 0.0025 ETH</td>
-                                                <td><img src="images/avatar/4.jpg" alt="" width="40"
-                                                        class="me-2 rounded-circle">0.0025 ETH</td>
-                                                <td>2 Hours 1 min 30s</td>
-                                                <td><span><i class="ri-close-line me-3"></i></span></td>
-                                            </tr>
-                                        </tbody>
+                                        <tbody id="data-center"></tbody>
+                                          
                                     </table>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title">Account Activity</h4><small>Recent activity on your account.</small>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Action</th>
-                                        <th>Source</th>
-                                        <th>IP Address</th>
-                                        <th>Location</th>
-                                        <th>When</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>verified second factor</td>
-                                        <td>api</td>
-                                        <td>157.119.239.254</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">about 1 hour ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>verified second factor</td>
-                                        <td>api</td>
-                                        <td>157.119.239.254</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">about 2 hours ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>second factor failure</td>
-                                        <td>api</td>
-                                        <td>157.119.239.254</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">about 2 hours ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>device confirmation completed</td>
-                                        <td>web</td>
-                                        <td>157.119.239.254</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">1 day ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>signin</td>
-                                        <td>web</td>
-                                        <td>157.119.239.254</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">1 day ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>verified second factor</td>
-                                        <td>web</td>
-                                        <td>157.119.239.254</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">1 day ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>signout</td>
-                                        <td>web</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">8 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>signin</td>
-                                        <td>web</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">8 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>verified second factor</td>
-                                        <td>web</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">8 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>signout</td>
-                                        <td>api</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">8 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>signout</td>
-                                        <td>api</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">8 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>device confirmation completed</td>
-                                        <td>web</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">8 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>signin</td>
-                                        <td>web</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">8 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>verified second factor</td>
-                                        <td>web</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">8 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>signout</td>
-                                        <td>api</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">15 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>verified second factor</td>
-                                        <td>web</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">15 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>signin</td>
-                                        <td>web</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">15 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>signout</td>
-                                        <td>api</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">15 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>verified second factor</td>
-                                        <td>web</td>
-                                        <td>23.106.249.39</td>
-                                        <td>Singapore</td>
-                                        <td><a href="#">15 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>verified second factor</td>
-                                        <td>api</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">15 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>xs verified</td>
-                                        <td>api</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">15 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>xs added</td>
-                                        <td>api</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">15 days ago</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>signin</td>
-                                        <td>api</td>
-                                        <td>157.119.239.214</td>
-                                        <td>Bangladesh</td>
-                                        <td><a href="#">15 days ago</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                 </div>
@@ -472,11 +206,13 @@
     </div>
 
 </div>
+<script src="js/api_1.js"></script>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/chartjs/chart.bundle.min.js"></script>
 <script src="js/plugins/chartjs-line-init.js"></script>
 <script src="js/plugins/chartjs-donut.js"></script>
 <script src="js/scripts.js"></script>
+
 </body>
 </html>
