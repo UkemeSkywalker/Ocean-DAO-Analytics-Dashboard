@@ -1,0 +1,20 @@
+{
+  "name": "DAO-Analytics-Dashboard",
+  "version": "1.0.0",
+  "description": "Covalent road to web3 Hackathon\r https://ruddy-hugger-0e6.notion.site/Hackathon-in-a-box-d8703a12d8f14c4d95cc4148923c5892",
+  "main": "convelant_api_2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UkemeSkywalker/DAO-Analytics-Dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UkemeSkywalker/DAO-Analytics-Dashboard/issues"
+  },
+  "homepage": "https://github.com/UkemeSkywalker/DAO-Analytics-Dashboard#readme"
+}
