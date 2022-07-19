@@ -18,6 +18,14 @@ Some key features may include visualizations to gauge:
 ## Code Base
 Our codebase is written with HTML, CSS & Vanilla Javascript
 
+## Highlighted Features
+    - Live Etherum Price this week
+    - Top 5 performing DAOs
+    - Quick Overview analysis
+    - Overall activity of a DAO
+    - Historical token price 
+    - General pool information
+
 ## Video Link
 
 ## Getting Started
@@ -33,14 +41,6 @@ it should be running on http://127.0.0.1:5500/index.html
 
 ## Generate API Key
 Get [API] (https://www.covalenthq.com/platform/#/auth/register/)
-
-## Key Features
-    - Live Etherum Price this week
-    - Top 5 performing DAOs
-    - Quick Overview analysis
-    - Overall activity of a DAO
-    - Historical token price 
-    - General pool information
 
 # Team Name
 Veni Vidi Vici

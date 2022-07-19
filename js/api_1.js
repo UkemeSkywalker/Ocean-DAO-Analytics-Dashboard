@@ -161,6 +161,7 @@ const getTokenHolders = async () => {
 getTokenHolders()
 
 // Get the historical price list in the past 5 days
+
 const PriceHistoryList = []
 const historicalPrices = async () => {
   try {
