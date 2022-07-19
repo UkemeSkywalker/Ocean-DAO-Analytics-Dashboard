@@ -8,15 +8,21 @@ The future is web3: a digital world that is censorship-resistant, decentralized,
 # Challenge Description
 The Covalent API empowers an army of developers, analysts and 'data nerds' to BUIDL using the richest and most robust data infrastructure for the entire blockchain ecosystem. This challenge is to create a basic open source, multi-chain compatible, DAO Analytics Dashboard Template, powered by the Covalent API.
 
-Some key features may include visualizations to gauge:
 
-- Member and DAO token holdings and token concentrations
-- Voting power concentration vs decentralization
-- DAO sentiment analysis based on tweets and other social media messages
-- The overall activity of a DAO
+## Highlighted Features
+    - Live Etherum Price this week
+    - Top 5 performing DAOs
+    - Member and DAO token holdings and token concentrations
+    - Voting power concentration vs decentralization
+    - The overall activity of a DAO
+    - Quick Overview analysis
+    - General pool information
+    - Overall activity of a DAO
+    - Historical token price 
 
 ## Code Base
 Our codebase is written with HTML, CSS & Vanilla Javascript
+
 
 ## Video Link
 
@@ -33,14 +39,6 @@ it should be running on http://127.0.0.1:5500/index.html
 
 ## Generate API Key
 Get [API] (https://www.covalenthq.com/platform/#/auth/register/)
-
-## Key Features
-    - Live Etherum Price this week
-    - Top 5 performing DAOs
-    - Quick Overview analysis
-    - Overall activity of a DAO
-    - Historical token price 
-    - General pool information
 
 # Team Name
 Veni Vidi Vici

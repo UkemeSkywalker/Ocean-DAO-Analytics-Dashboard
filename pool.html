@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OCEAN DAO ANALYTICS</title>
+    <meta name="description"
+        content="Discover, Access, Interact with the Awesomeness of DAO With The Covalent API">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/OceanDAO.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="@@dashboard">
+
+<div id="preloader"><i>.</i><i>.</i><i>.</i></div>
+
+<div id="main-wrapper">
+
+    <div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="header-content">
+                    <div class="header-left">
+                        <div class="brand-logo"><a class="mini-logo" href="index.html"><img src="images/OceanDAO.png" alt="oceandao logo"
+                                    width="40"></a></div>
+                        <div class="search">
+                            <form action="#"><span><i class="ri-search-line"></i></span><input type="text"
+                                    placeholder="Search Here"></form>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <!-- <div class="theme-switch"><i class="ri-sun-line"></i></div> -->
+
+                        <div class="dark-light-toggle theme-switch" onclick="themeToggle()">
+                            <span class="dark"><i class="ri-moon-line"></i></span>
+                            <span class="light"><i class="ri-sun-line"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="sidebar">
+    <div class="brand-logo"><a class="full-logo" href="index.html"><img src="images/OceanDAO.png" alt="ocean dao logo" width="30"></a></div>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <span><i class="ri-layout-grid-fill"></i></span>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="pool.html">
+                    <span><i class="ri-wallet-line"></i></span>
+                    <span class="nav-text">DAO Pool Information</span>
+                </a>
+            </li>
+            <li>
+                <a href="token_price.html">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    </span>
+                    <span class="nav-text">TOKEN PRICE</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    <div class="content-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-6">
+                    <div class="promotion promotion1 d-flex justify-content-between align-items-center">
+                        <div class="promotion-detail">
+                            <h1 class="text-white mb-3">POOL INFORMATION</h1>
+                            <h3>Discover, Access, &amp; Interact with the Awesomeness of DAO</h3>
+                            <p><strong>through the Covalent API</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-header flex-row">
+                            <h4 class="card-title">Exchange Information </h4>
+                        </div>
+                    <div class="card">
+                        <div class="row" >
+                            <div id="totalContainer" class="row">
+                                <div class="col-xl-3 col-sm-6">
+                                    <div class="stat-widget d-flex align-items-center">
+                                        <div class=""></div>
+                                        <div class="widget-content">
+                                            <h4>156</h4>
+                                            <p>Swap Count</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6">
+                                    <div class="stat-widget d-flex align-items-center">
+                                        <div class=""></div>
+                                        <div class="widget-content">
+                                            <h4>$99,320,793.40</h4>
+                                            <p>Total Liquidity</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6">
+                                    <div class="stat-widget d-flex align-items-center">
+                                        <div class=""></div>
+                                        <div class="widget-content">
+                                            <h3>425600000</h3>
+                                            <p>Total Supply</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6">
+                                    <div class="stat-widget d-flex align-items-center">
+                                        <div class=""></div>
+                                        <div class="widget-content">
+                                            <h3>89</h3>
+                                            <p>Volume 24h</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                <div class="col-12">
+                    <div class="card filter-tab m-0">
+                        <div class="card-header">
+                            <h4 class="card-title">Pools including LP token prices, reserves, exchange volumes and fees.</h4>
+                            <div class="filter-nav"></div>
+                        </div>
+                        <div class="card-body bs-0 p-0 bg-transparent">
+                            <div class="row">
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="card items">
+                                        <div class="card-body">
+                                            <div class="items-img position-relative"><img src="images/items/1.jpg"
+                                                    class="img-fluid rounded mb-3" alt=""><img
+                                                    src="images/avatar/1.jpg" class="creator" width="50" alt=""></div>
+                                            <h4 class="card-title">Contract Name</h4>
+                                            <p></p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-start">
+                                                    <p class="mb-2">Contract Symbol</p>
+                                                    <h5 class="text-muted">quote rate</h5>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p class="mb-2">Volume <strong class="text-primary">Out
+                                                            <!-- -->
+                                                        </strong></p>
+                                                    <h5 class="text-muted">Volume
+                                                        <!-- --> In
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center mt-3"><a href="#"
+                                                    class="btn btn-primary">Contract Address</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="card items">
+                                        <div class="card-body">
+                                            <div class="items-img position-relative"><img src="images/items/1.jpg"
+                                                    class="img-fluid rounded mb-3" alt=""><img
+                                                    src="images/avatar/1.jpg" class="creator" width="50" alt=""></div>
+                                            <h4 class="card-title">Contract Name</h4>
+                                            <p></p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-start">
+                                                    <p class="mb-2">Contract Symbol</p>
+                                                    <h5 class="text-muted">quote rate</h5>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p class="mb-2">Volume <strong class="text-primary">Out
+                                                            <!-- -->
+                                                        </strong></p>
+                                                    <h5 class="text-muted">Volume
+                                                        <!-- --> In
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center mt-3"><a href="#"
+                                                    class="btn btn-primary">Contract Address</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="card items">
+                                        <div class="card-body">
+                                            <div class="items-img position-relative"><img src="images/items/1.jpg"
+                                                    class="img-fluid rounded mb-3" alt=""><img
+                                                    src="images/avatar/1.jpg" class="creator" width="50" alt=""></div>
+                                            <h4 class="card-title">Contract Name</h4>
+                                            <p></p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-start">
+                                                    <p class="mb-2">Contract Symbol</p>
+                                                    <h5 class="text-muted">quote rate</h5>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p class="mb-2">Volume <strong class="text-primary">Out
+                                                            <!-- -->
+                                                        </strong></p>
+                                                    <h5 class="text-muted">Volume
+                                                        <!-- --> In
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center mt-3"><a href="#"
+                                                    class="btn btn-primary">Contract Address</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="card items">
+                                        <div class="card-body">
+                                            <div class="items-img position-relative"><img src="images/items/1.jpg"
+                                                    class="img-fluid rounded mb-3" alt=""><img
+                                                    src="images/avatar/1.jpg" class="creator" width="50" alt=""></div>
+                                            <h4 class="card-title">Contract Name</h4>
+                                            <p></p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-start">
+                                                    <p class="mb-2">Contract Symbol</p>
+                                                    <h5 class="text-muted">quote rate</h5>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p class="mb-2">Volume <strong class="text-primary">Out
+                                                            <!-- -->
+                                                        </strong></p>
+                                                    <h5 class="text-muted">Volume
+                                                        <!-- --> In
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center mt-3"><a href="#"
+                                                    class="btn btn-primary">Contract Address</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+<script src="js/api_1.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
