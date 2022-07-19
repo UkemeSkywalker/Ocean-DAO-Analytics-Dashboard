@@ -15,6 +15,33 @@ Some key features may include visualizations to gauge:
 - DAO sentiment analysis based on tweets and other social media messages
 - The overall activity of a DAO
 
+## Code Base
+Our codebase is written with HTML, CSS & Vanilla Javascript
+
+## Video Link
+
+## Getting Started
+First, clone the repo with the following git command:
+
+[GitRepo](https://github.com/UkemeSkywalker/DAO-Analytics-Dashboard.git)
+
+Second, Install the live Server extension on VSCode:
+Our main entry point is **index.html**, use live server to open the document on your browser
+it should be running on http://127.0.0.1:5500/index.html
+
+## Hosting Link
+
+## Generate API Key
+Get [API] (https://www.covalenthq.com/platform/#/auth/register/)
+
+## Key Features
+    - Live Etherum Price this week
+    - Top 5 performing DAOs
+    - Quick Overview analysis
+    - Overall activity of a DAO
+    - Historical token price 
+    - General pool information
+
 # Team Name
 Veni Vidi Vici
 I came, I saw, I conqure!
