@@ -1,10 +1,4 @@
 /*
-    Name: anft
-    Author: imsaifun
-    Author Portfolio : https://themeforest.net/user/imsaifun/portfolio
-    Email: imsaifun@gmail.com
-
-
     Table of Content: 
 
     1. Abstract
@@ -10988,5 +10982,8 @@ button,
   .customer-support-content a {
     color: #6f4ef2;
     font-size: 14px; }
+  .promotion1{
+    background: url(../images/bg/promotion-wallpaper.png);
+  }
 
 /*# sourceMappingURL=style.css.map */
