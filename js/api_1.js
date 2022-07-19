@@ -159,3 +159,34 @@ const getTokenHolders = async () => {
 };
 
 getTokenHolders();
+
+// Get the historical price list in the past 5 days
+
+const PriceHistoryList = [];
+const historicalPrices = async () => {
+  try {
+    const historicalUrl = `${baseURL}/pricing/historical_by_addresses_v2/1/USD/0x4d224452801aced8b2f0aebe155379bb5d594381/?quote-currency=USD&format=JSON&from=2022-07-19&to=2022-07-14&key=${APIKEY}`;
+    const priceResponse = await fetch(historicalUrl);
+    const priceData = await priceResponse.json();
+    const data = priceData.data;
+
+    console.log("line 172", priceData);
+    console.log("line 173", data);
+
+    let tokensDatePriceData = [];
+    const tokensDatePrice = data.map((data) => {
+      data.items.map((item) => {
+        tokensDatePriceData.push({ date: item.date, price: item.price });
+      });
+      console.log(tokensDatePriceData);
+    });
+
+    PriceHistoryList.push(tokensDatePrice);
+    console.log("line 184", PriceHistoryList[0]);
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+historicalPrices();
