@@ -1,9 +1,3 @@
-// const APIKEY = "ckey_878291853f4d4b82987bd09ce36";
-// const baseURL = "https://api.covalenthq.com/v1";
-// const blockchainChainId = "1";
-// const demoAddress = "demo.eth";
-// const cryptoList = [];
-
 const fetchUniswapData = async function () {
   try {
     const url = new URL(
@@ -19,15 +13,19 @@ const fetchUniswapData = async function () {
     console.log("uniswap data", data);
 
     const exchangeInformation = data.map((data) => {
+      let swap_count_total = 0;
+      let total_liquidity = 0;
+      let total_supply = 0;
+
       return {
         swap_count: data.swap_count_24h,
-        total_liquidity: data.total_liquidity_quote,
+        liquidity: data.total_liquidity_quote,
         total_supply: data.total_supply,
       };
     });
 
-    const contractTable = data.map((data) => {
-      return {
+    const contractTable = data.slice(0, 4).map((data) => {
+      const result = {
         contract_name: data.token_1.contract_name,
         contract_address: data.token_1.contract_address,
         contract_token_price: data.token_1.quote_rate,
@@ -39,11 +37,13 @@ const fetchUniswapData = async function () {
         volume_in_7d: data.token_1.volume_in_7d,
         volume_out_7d: data.token_1.volume_out_7d,
       };
+      return result;
     });
+    displayUI(contractTable);
     console.log("contractTable", contractTable);
     console.log("exchangeInformation", exchangeInformation);
     // cryptoList.push(myCryptoList);
-    displayUI(contractTable);
+
     return data;
   } catch (err) {
     console.error(err);
@@ -52,25 +52,45 @@ const fetchUniswapData = async function () {
 
 fetchUniswapData();
 
+// Contract Name
+// Contract Symbol
+
+// quote rate
+// Volume Out
+
+// Volume In
+
 const displayUI = function (results) {
   const container = document.getElementById("new_list");
-
-  results.forEach((data, index) => {
+  results.forEach((data) => {
     let renderData = `
-        <ul>${index + 1}
-            <li>contract_address: ${data.contract_address}</li>
-            <li>contract_name:  ${data.contract_name}</li>
-            <li>contract_symbol:  ${data.contract_symbol}</li>
-            <li> contract_token_price:  ${data.contract_token_price}</li>
-            <li>total_supply:  ${data.total_supply}</li>
-            <li>dex_name:  ${data.dex_name}</li>
-            <li>total_marketcap:  ${data.total_marketcap}</li>
-            <li>contract_logo:  ${data.contract_logo}</li>
-            <li>volume_in_24h:  ${data.volume_in_24h}</li>
-            <li>volume_out_24h:  ${data.volume_out_24h}</li>
-            <li>volume_in_7d:  ${data.volume_in_7d}</li>
-            <li>volume_out_7d:  ${data.volume_out_7d}</li>
-        </ul>`;
+        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+        <div class="card items">
+            <div class="card-body">
+                <div class="items-img position-relative"><img src="images/items/1.jpg"
+                        class="img-fluid rounded mb-3" alt=""><img
+                        src="images/avatar/1.jpg" class="creator" width="50" alt=""></div>
+                <h4 class="card-title">${data.contract_name}</h4>
+                <p></p>
+                <div class="d-flex justify-content-between">
+                    <div class="text-start">
+                        <p class="mb-2">${data.contract_symbol}</p>
+                        <h5 class="text-muted">quote rate       ${data.contract_token_price}</h5>
+                    </div>
+                    <div class="text-end">
+                        <p class="mb-2">Volume <strong class="text-primary">Out
+                              
+                            </strong>       ${data.volume_out_24h}</p>
+                        <h5 class="text-muted">Volume
+                            In      ${data.volume_in_24h}
+                        </h5>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-3"><a href="#"
+                        class="btn btn-primary">Contract Address        ${data.contract_address}</a></div>
+            </div>
+        </div>
+    </div>`;
     container.innerHTML += renderData;
   });
 };

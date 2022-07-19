@@ -3,7 +3,6 @@ const lineChart = function (dates, prices) {
   if (activity !== null) {
     var activityData = [
       {
-        //   first: [resultData],
         first: prices,
       },
     ];
@@ -43,7 +42,7 @@ const lineChart = function (dates, prices) {
               },
               ticks: {
                 display: true,
-                // fontColor: "#8a909d",
+                fontColor: "#8a909d",
               },
             },
           ],
