@@ -119,19 +119,19 @@ function totalMarketCap(results) {
   </div>
   <div class="col-xl-3 col-sm-6">
       <div class="stat-widget d-flex align-items-center">
-          <div class="widget-icon me-3 bg-warning"><span><i class="ri-file-paper-line"></i></span></div>
+          <div class="widget-icon me-3 bg-warning"><span><i class="ri-bank-line"></i></span></div>
           <div class="widget-content">
-              <h3></h3>
-              <p>C</p>
+              <h3>1.7M</h3>
+              <p><strong>Governance Token Holders</strong></p>
           </div>
       </div>
   </div>
   <div class="col-xl-3 col-sm-6">
       <div class="stat-widget d-flex align-items-center">
-          <div class="widget-icon me-3 bg-danger"><span><i class="ri-file-paper-2-line"></i></span></div>
+          <div class="widget-icon me-3 bg-danger"><span><i class="ri-file-copy-line"></i></span></div>
           <div class="widget-content">
-              <h3>89</h3>
-              <p>Canceled</p>
+              <h3>497k</h3>
+              <p><strong>Active Voters</strong></p>
           </div>
       </div>
   </div>
