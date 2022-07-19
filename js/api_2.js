@@ -43,7 +43,6 @@ const fetchUniswapData = async function () {
     console.log("contractTable", contractTable);
     console.log("exchangeInformation", exchangeInformation);
     // cryptoList.push(myCryptoList);
-
     return data;
   } catch (err) {
     console.error(err);
