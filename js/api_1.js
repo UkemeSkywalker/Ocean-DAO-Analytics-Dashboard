@@ -1,27 +1,27 @@
 // const { ok } = require("assert");
 
-const APIKEY = 'ckey_878291853f4d4b82987bd09ce36'
-const baseURL = 'https://api.covalenthq.com/v1'
-const blockchainChainId = '1'
-const demoAddress = 'demo.eth'
-const cryptoList = []
+const APIKEY = "ckey_878291853f4d4b82987bd09ce36";
+const baseURL = "https://api.covalenthq.com/v1";
+const blockchainChainId = "1";
+const demoAddress = "demo.eth";
+const cryptoList = [];
 
 const fetchData = async function (chainId, address) {
   try {
     const url = new URL(
-      `${baseURL}/${chainId}/address/${address}/balances_v2/?key=${APIKEY}`,
-    )
-    const response = await fetch(url)
+      `${baseURL}/${chainId}/address/${address}/balances_v2/?key=${APIKEY}`
+    );
+    const response = await fetch(url);
     if (!response.ok) {
-      throw new Error('Data not found')
+      throw new Error("Data not found");
     }
-    const result = await response.json()
+    const result = await response.json();
     // console.log('line 19 ', response);
     // console.log('line 20 ',result);
 
-    const data = result.data
+    const data = result.data;
 
-    console.log('line 24 ', data)
+    console.log("line 24  api1", data);
 
     const myCryptoList = data.items.map((data) => {
       return {
@@ -31,20 +31,20 @@ const fetchData = async function (chainId, address) {
         coin_logo: data.logo_url,
         coin_symbol: data.contract_ticker_symbol,
         decimal: data.contract_decimals,
-      }
-    })
+      };
+    });
     // console.log('line 35 ',myCryptoList);
-    cryptoList.push(myCryptoList)
+    cryptoList.push(myCryptoList);
     // console.log('line 35 ',cryptoList[0]);
-    showData(cryptoList[0])
-    totalMarketCap(cryptoList[0])
-    return data
+    showData(cryptoList[0]);
+    totalMarketCap(cryptoList[0]);
+    return data;
   } catch (err) {
-    console.error(err)
+    console.error(err);
   }
-}
+};
 
-fetchData(blockchainChainId, demoAddress)
+fetchData(blockchainChainId, demoAddress);
 
 // balance: "1645829165965035786"
 // balance_24h: "1645829165965035786"
@@ -72,12 +72,12 @@ contract_address: "0xc85e0474068dba5b49450c26879541ee6cc94554"
  * 
  */
 let emptyCoin =
-  'https://www.pngall.com/wp-content/uploads/4/Empty-Gold-Coin.png'
-console.log(emptyCoin)
+  "https://www.pngall.com/wp-content/uploads/4/Empty-Gold-Coin.png";
+console.log(emptyCoin);
 
 function showData(results) {
-  console.log('line 74', results)
-  let dataCenter = document.getElementById('data-center')
+  console.log("line 74", results);
+  let dataCenter = document.getElementById("data-center");
 
   results.slice(2, 22).forEach((data, index) => {
     let renderData = `
@@ -96,13 +96,13 @@ function showData(results) {
             <td><p class="mb-0">${data.coin_price}</p></td>
             <td>${data.decimal}</td>
             <td>${data.contract_address}</td>
-        </tr>`
-    dataCenter.innerHTML += renderData
-  })
+        </tr>`;
+    dataCenter.innerHTML += renderData;
+  });
 }
 
 function totalMarketCap(results) {
-  let totalContainer = document.getElementById('totalContainer')
+  let totalContainer = document.getElementById("totalContainer");
   let renderData = `
   <div class="col-xl-3 col-sm-6">
       <div class="stat-widget d-flex align-items-center">
@@ -140,22 +140,22 @@ function totalMarketCap(results) {
           </div>
       </div>
   </div>
-`
-  totalContainer.innerHTML += renderData
+`;
+  totalContainer.innerHTML += renderData;
 }
 
 const getTokenHolders = async () => {
   try {
     // const holderUrl = `${baseURL}1/tokens/0xD417144312DbF50465b1C641d016962017Ef6240/token_holders/?key=${APIKEY}&page-size=10`
-    const holderUrl = `${baseURL}/1/xy=k/uniswap_v2/pools/?quote-currency=USD&format=JSON&contract-addresses=0x1f9840a85d5af5bf1d1762f925bdaddc4201f984&page-number=&key=${APIKEY}`
-    const response = await fetch(holderUrl)
-    const parsedData = await response.json()
-    const data = parsedData.data.items
+    const holderUrl = `${baseURL}/1/xy=k/uniswap_v2/pools/?quote-currency=USD&format=JSON&contract-addresses=0x1f9840a85d5af5bf1d1762f925bdaddc4201f984&page-number=&key=${APIKEY}`;
+    const response = await fetch(holderUrl);
+    const parsedData = await response.json();
+    const data = parsedData.data.items;
 
-    console.log('line 157', data)
+    console.log("line 157", data);
   } catch (error) {
-    console.error(error)
+    console.error(error);
   }
-}
+};
 
-getTokenHolders()
+getTokenHolders();
