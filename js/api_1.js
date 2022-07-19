@@ -16,8 +16,6 @@ const fetchData = async function (chainId, address) {
       throw new Error("Data not found");
     }
     const result = await response.json();
-    // console.log('line 19 ', response);
-    // console.log('line 20 ',result);
 
     const data = result.data;
 
@@ -38,7 +36,7 @@ const fetchData = async function (chainId, address) {
     // console.log('line 35 ',cryptoList[0]);
     showData(cryptoList[0]);
     totalMarketCap(cryptoList[0]);
-    return data;
+    //return data;
   } catch (err) {
     console.error(err);
   }
@@ -71,9 +69,6 @@ coin_symbol: "KyDy.org"
 contract_address: "0xc85e0474068dba5b49450c26879541ee6cc94554"
  * 
  */
-let emptyCoin =
-  "https://www.pngall.com/wp-content/uploads/4/Empty-Gold-Coin.png";
-console.log(emptyCoin);
 
 function showData(results) {
   console.log("line 74", results);
@@ -144,21 +139,21 @@ function totalMarketCap(results) {
   totalContainer.innerHTML += renderData;
 }
 
-const getTokenHolders = async () => {
-  try {
-    // const holderUrl = `${baseURL}1/tokens/0xD417144312DbF50465b1C641d016962017Ef6240/token_holders/?key=${APIKEY}&page-size=10`
-    const holderUrl = `${baseURL}/1/xy=k/uniswap_v2/pools/?quote-currency=USD&format=JSON&contract-addresses=0x1f9840a85d5af5bf1d1762f925bdaddc4201f984&page-number=&key=${APIKEY}`;
-    const response = await fetch(holderUrl);
-    const parsedData = await response.json();
-    const data = parsedData.data.items;
+// const getTokenHolders = async () => {
+//   try {
+//     // const holderUrl = `${baseURL}1/tokens/0xD417144312DbF50465b1C641d016962017Ef6240/token_holders/?key=${APIKEY}&page-size=10`
+//     const holderUrl = `${baseURL}/1/xy=k/uniswap_v2/pools/?quote-currency=USD&format=JSON&contract-addresses=0x1f9840a85d5af5bf1d1762f925bdaddc4201f984&page-number=&key=${APIKEY}`;
+//     const response = await fetch(holderUrl);
+//     const parsedData = await response.json();
+//     const data = parsedData.data.items;
 
-    console.log("line 157", data);
-  } catch (error) {
-    console.error(error);
-  }
-};
+//     console.log("line 157", data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 
-getTokenHolders();
+//getTokenHolders();
 
 // Get the historical price list in the past 5 days
 
@@ -178,7 +173,7 @@ const historicalPrices = async () => {
       data.items.map((item) => {
         tokensDatePriceData.push({ date: item.date, price: item.price });
       });
-      console.log(tokensDatePriceData);
+      console.log("token prices", tokensDatePriceData);
     });
 
     PriceHistoryList.push(tokensDatePrice);
@@ -189,4 +184,5 @@ const historicalPrices = async () => {
   }
 };
 
-historicalPrices();
+//historicalPrices();
+// console.log("new work", PriceHistoryList);
