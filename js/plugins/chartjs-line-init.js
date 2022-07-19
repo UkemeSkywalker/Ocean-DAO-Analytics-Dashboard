@@ -25,18 +25,15 @@ if (activity !== null) {
         type: "line",
         data: {
             labels: [
-                "4 Jan",
-                "5 Jan",
-                "6 Jan",
-                "7 Jan",
-                "8 Jan",
-                "9 Jan",
-                "10 Jan",
-                "11 Jan",
-                "12 Jan",
-                "13 Jan",
-                "14 Jan",
-                "15 Jan",
+                
+                "12. Jul",
+                "123. Jul",
+                "14. Jul",
+                "15. Jul",
+                "16. Jul",
+                "17. Jul",
+                "18. Jul",
+                
             ],
             datasets: [
                 {
