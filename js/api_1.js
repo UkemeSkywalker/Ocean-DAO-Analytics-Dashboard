@@ -71,7 +71,8 @@ coin_symbol: "KyDy.org"
 contract_address: "0xc85e0474068dba5b49450c26879541ee6cc94554"
  * 
  */
-let emptyCoin = "https://www.pngall.com/wp-content/uploads/4/Empty-Gold-Coin.png"
+let emptyCoin =
+  'https://www.pngall.com/wp-content/uploads/4/Empty-Gold-Coin.png'
 console.log(emptyCoin)
 
 function showData(results) {
@@ -142,3 +143,19 @@ function totalMarketCap(results) {
 `
   totalContainer.innerHTML += renderData
 }
+
+const getTokenHolders = async () => {
+  try {
+    // const holderUrl = `${baseURL}1/tokens/0xD417144312DbF50465b1C641d016962017Ef6240/token_holders/?key=${APIKEY}&page-size=10`
+    const holderUrl = `${baseURL}/1/xy=k/uniswap_v2/pools/?quote-currency=USD&format=JSON&contract-addresses=0x1f9840a85d5af5bf1d1762f925bdaddc4201f984&page-number=&key=${APIKEY}`
+    const response = await fetch(holderUrl)
+    const parsedData = await response.json()
+    const data = parsedData.data.items
+
+    console.log('line 157', data)
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+getTokenHolders()
