@@ -13,10 +13,6 @@ const fetchUniswapData = async function () {
     console.log("uniswap data", data);
 
     const exchangeInformation = data.map((data) => {
-      let swap_count_total = 0;
-      let total_liquidity = 0;
-      let total_supply = 0;
-
       return {
         swap_count: data.swap_count_24h,
         liquidity: data.total_liquidity_quote,
@@ -40,24 +36,14 @@ const fetchUniswapData = async function () {
       return result;
     });
     displayUI(contractTable);
-    console.log("contractTable", contractTable);
-    console.log("exchangeInformation", exchangeInformation);
     // cryptoList.push(myCryptoList);
     return data;
   } catch (err) {
     console.error(err);
   }
 };
-
 fetchUniswapData();
 
-// Contract Name
-// Contract Symbol
-
-// quote rate
-// Volume Out
-
-// Volume In
 
 const displayUI = function (results) {
   const container = document.getElementById("new_list");
