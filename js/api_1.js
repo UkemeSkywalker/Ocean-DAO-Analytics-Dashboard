@@ -16,8 +16,6 @@ const fetchData = async function (chainId, address) {
       throw new Error("Data not found");
     }
     const result = await response.json();
-    // console.log('line 19 ', response);
-    // console.log('line 20 ',result);
 
     const data = result.data;
 
@@ -38,7 +36,7 @@ const fetchData = async function (chainId, address) {
     // console.log('line 35 ',cryptoList[0]);
     showData(cryptoList[0]);
     totalMarketCap(cryptoList[0]);
-    return data;
+    //return data;
   } catch (err) {
     console.error(err);
   }
@@ -71,12 +69,8 @@ coin_symbol: "KyDy.org"
 contract_address: "0xc85e0474068dba5b49450c26879541ee6cc94554"
  * 
  */
-let emptyCoin =
-  "https://www.pngall.com/wp-content/uploads/4/Empty-Gold-Coin.png";
-console.log(emptyCoin);
 
 function showData(results) {
-  console.log("line 74", results);
   let dataCenter = document.getElementById("data-center");
 
   results.slice(2, 22).forEach((data, index) => {
@@ -100,6 +94,8 @@ function showData(results) {
     dataCenter.innerHTML += renderData;
   });
 }
+
+// price length
 
 function totalMarketCap(results) {
   let totalContainer = document.getElementById("totalContainer");
@@ -126,8 +122,8 @@ function totalMarketCap(results) {
       <div class="stat-widget d-flex align-items-center">
           <div class="widget-icon me-3 bg-warning"><span><i class="ri-file-paper-line"></i></span></div>
           <div class="widget-content">
-              <h3></h3>
-              <p>C</p>
+              <h3>1.7M</h3>
+              <p><strong>Governance Token Holders</strong></p>
           </div>
       </div>
   </div>
@@ -135,8 +131,8 @@ function totalMarketCap(results) {
       <div class="stat-widget d-flex align-items-center">
           <div class="widget-icon me-3 bg-danger"><span><i class="ri-file-paper-2-line"></i></span></div>
           <div class="widget-content">
-              <h3>89</h3>
-              <p>Canceled</p>
+              <h3>497k</h3>
+              <p><strong>Active Voters</strong></p>
           </div>
       </div>
   </div>
@@ -158,35 +154,36 @@ function totalMarketCap(results) {
 //   }
 // };
 
-// getTokenHolders();
+//getTokenHolders();
 
 // // Get the historical price list in the past 5 days
 
-// const PriceHistoryList = [];
-// const historicalPrices = async () => {
-//   try {
-//     const historicalUrl = `${baseURL}/pricing/historical_by_addresses_v2/1/USD/0x4d224452801aced8b2f0aebe155379bb5d594381/?quote-currency=USD&format=JSON&from=2022-07-19&to=2022-07-14&key=${APIKEY}`;
-//     const priceResponse = await fetch(historicalUrl);
-//     const priceData = await priceResponse.json();
-//     const data = priceData.data;
+const PriceHistoryList = [];
+const historicalPrices = async () => {
+  try {
+    const historicalUrl = `${baseURL}/pricing/historical_by_addresses_v2/1/USD/0x4d224452801aced8b2f0aebe155379bb5d594381/?quote-currency=USD&format=JSON&from=2022-07-19&to=2022-07-14&key=${APIKEY}`;
+    const priceResponse = await fetch(historicalUrl);
+    const priceData = await priceResponse.json();
+    const data = priceData.data;
 
-//     console.log("line 172", priceData);
-//     console.log("line 173", data);
+    // console.log("line 172", priceData);
+    console.log("line 173", data);
 
-//     let tokensDatePriceData = [];
-//     const tokensDatePrice = data.map((data) => {
-//       data.items.map((item) => {
-//         tokensDatePriceData.push({ date: item.date, price: item.price });
-//       });
-//       console.log(tokensDatePriceData);
-//     });
+    let tokensDatePriceData = [];
+    const tokensDatePrice = data.map((data) => {
+      data.items.map((item) => {
+        tokensDatePriceData.push({ date: item.date, price: item.price });
+      });
+      console.log("line 177", tokensDatePriceData);
+    });
 
-//     PriceHistoryList.push(tokensDatePrice);
-//     console.log("line 184", PriceHistoryList[0]);
-//     return data;
-//   } catch (err) {
-//     console.error(err);
-//   }
-// };
+    PriceHistoryList.push(tokensDatePrice);
+    console.log("line 184", PriceHistoryList[0]);
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+};
 
-// historicalPrices();
+historicalPrices();
+console.log("new work", PriceHistoryList);

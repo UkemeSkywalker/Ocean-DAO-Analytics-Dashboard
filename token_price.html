@@ -36,7 +36,9 @@
                         </div>
                     </div>
                     <div class="header-right">
-
+                        <a class="btn btn-secondary me-3" id="userAddress" onclick="connect();">
+                            Connect Wallet
+                        </a>
                         <div class="dark-light-toggle theme-switch" onclick="themeToggle()">
                             <span class="dark"><i class="ri-moon-line"></i></span>
                             <span class="light"><i class="ri-sun-line"></i></span>
@@ -73,7 +75,12 @@
                     <span class="nav-text">TOKEN PRICE</span>
                 </a>
             </li>
-            
+            <li>
+                <a href="graph.html">
+                  <span><i class="ri-star-line"></i></span>
+                  <span class="nav-text">DAO Pool Information</span>
+                </a>
+              </li>   
         </ul>
     </div>
 </div>
@@ -85,7 +92,7 @@
                     <div class="promotion d-flex justify-content-between align-items-center" style="background: url(images/bg/promo2.png);">
                         <div class="promotion-detail">
                             <h1 class="text-white mb-3">TOKEN PRICE HISTORY</h1>
-                            <h3>Access the token price history of top DAO's for the past five days</h3>
+                            <h3>Access the token price history of top DAO's for the past Ten days</h3>
                             <p><strong>using the Covalent API</strong></p>
                         </div>
                     </div>
@@ -95,12 +102,12 @@
                     <div class="col-xxl-12 col-xl-12 col-lg-12">
                         <div class="card">
                             
-                            <div class="row align-items-center justify-content-between">
+                            <div class="row align-items-center justify-content-between" >
                                 <div class="col-xxl-6 col-xl-6 col-lg-6 mb-5">
                                     <div class="col-12">
                                         <img src="images/aapecoin.png" style="margin:0 auto; display:block" alt="" width="60" height="60">
                                         <h2 style="text-align:center">APECOIN</h2>
-                                        <p style="text-align:center">Apecoin token price history for the past five days</p>
+                                        <p style="text-align:center">Apecoin token price history for the past Ten days</p>
                                     </div>
 
                                     <div class="d-flex justify-content-between creator-widget active align-items-center" >
@@ -113,160 +120,17 @@
                                             <h5 class="mb-0">Price</h5>
                                         </div>
 
-                                        <!-- <div class="top-creators-info">
-                                            <h5 class="mb-0">Rise</h5>
-                                        </div> -->
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">19:06:22</h5>
-                                        </div>
                                         
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$2.3</h5>
-                                        </div>
-
                                     </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">18:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.95</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">17:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$2.05</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">16:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.3</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">16:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.3</h5>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-xxl-6 col-xl-6 col-lg-6 mb-5">
-                                    <div class="col-12">
-                                        <img src="images/aave.png" style="margin:0 auto; display:block" alt="" width="60" height="60">
-                                        <h2 style="text-align:center">AAVE</h2>
-                                        <p style="text-align:center">aave token price history for the past five days</p>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active align-items-center" >
-
-                                        <div class="top-creators-info">
-                                            <h5 class="mb-0">Date</h5>
-                                        </div>
-
-                                        <div class="top-creators-info">
-                                            <h5 class="mb-0">Price</h5>
-                                        </div>
-
-                                        <!-- <div class="top-creators-info">
-                                            <h5 class="mb-0">Rise</h5>
-                                        </div> -->
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">19:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$2.3</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">18:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.95</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">17:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$2.05</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">16:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.3</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">16:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.3</h5>
-                                        </div>
-
-                                    </div>
+                                    <div id="apeCoin_container"></div>
+                         
                                 </div>
 
                                 <div class="col-xxl-6 col-xl-6 col-lg-6 mb-5">
                                     <div class="col-12">
                                         <img src="images/uniswap.png" style="margin:0 auto; display:block" alt="" width="60" height="60">
                                         <h2 style="text-align:center">UNISWAP</h2>
-                                        <p style="text-align:center">Uniswap token price history for the past five days</p>
+                                        <p style="text-align:center">UNISWAP token price history for the past Ten days</p>
                                     </div>
 
                                     <div class="d-flex justify-content-between creator-widget active align-items-center" >
@@ -278,78 +142,50 @@
                                         <div class="top-creators-info">
                                             <h5 class="mb-0">Price</h5>
                                         </div>
-
-                                        <!-- <div class="top-creators-info">
-                                            <h5 class="mb-0">Rise</h5>
-                                        </div> -->
+                                      
                                     </div>
 
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
+                                    <div id="uniswap_container"></div>
+                              
 
-                                        <div class="text-end">
-                                            <h5 class="text-primary">19:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$2.3</h5>
-                                        </div>
+                                                                      
+                                
+                                 
+                                </div>
 
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 mb-5">
+                                    <div class="col-12">
+                                        <img src="images/aave.png" style="margin:0 auto; display:block" alt="" width="60" height="60">
+                                        <h2 style="text-align:center">AAVE</h2>
+                                        <p style="text-align:center">aave token price history for the past Ten days</p>
                                     </div>
 
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
+                                    <div class="d-flex justify-content-between creator-widget active align-items-center" >
 
-                                        <div class="text-end">
-                                            <h5 class="text-primary">18:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.95</h5>
+                                        <div class="top-creators-info">
+                                            <h5 class="mb-0">Date</h5>
                                         </div>
 
+                                        <div class="top-creators-info">
+                                            <h5 class="mb-0">Price</h5>
+                                        </div>                                                                              
+
+                                    
                                     </div>
 
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
+                                    <div id="aave_container"></div>
 
-                                        <div class="text-end">
-                                            <h5 class="text-primary">17:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$2.05</h5>
-                                        </div>
+                                  
+                           
 
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">16:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.3</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">16:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.3</h5>
-                                        </div>
-
-                                    </div>
+                                  
                                 </div>
 
                                 <div class="col-xxl-6 col-xl-6 col-lg-6 mb-5">
                                     <div class="col-12">
                                         <img src="images/maker.png" style="margin:0 auto; display:block" alt="" width="60" height="60">
                                         <h2 style="text-align:center">MAKER</h2>
-                                        <p style="text-align:center">Maker token price history for the past five days</p>
+                                        <p style="text-align:center">Maker token price history for the past Ten days</p>
                                     </div>
 
                                     <div class="d-flex justify-content-between creator-widget active align-items-center" >
@@ -362,154 +198,14 @@
                                             <h5 class="mb-0">Price</h5>
                                         </div>
 
-                                        <!-- <div class="top-creators-info">
-                                            <h5 class="mb-0">Rise</h5>
-                                        </div> -->
                                     </div>
 
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
+                                    <div id="maker_container"></div>
 
-                                        <div class="text-end">
-                                            <h5 class="text-primary">19:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$2.3</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">18:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.95</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">17:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$2.05</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">16:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.3</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">16:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.3</h5>
-                                        </div>
-
-                                    </div>
+                                               
+                                   
                                 </div>
-
-                                <div class="col-xxl-6 col-xl-6 col-lg-6 mb-5">
-                                    <div class="col-12">
-                                        <img src="images/dash.png" style="margin:0 auto; display:block" alt="" width="60" height="60">
-                                        <h2 style="text-align:center">DASH</h2>
-                                        <p style="text-align:center">Dash token price history for the past five days</p>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active align-items-center" >
-
-                                        <div class="top-creators-info">
-                                            <h5 class="mb-0">Date</h5>
-                                        </div>
-
-                                        <div class="top-creators-info">
-                                            <h5 class="mb-0">Price</h5>
-                                        </div>
-
-                                        <!-- <div class="top-creators-info">
-                                            <h5 class="mb-0">Rise</h5>
-                                        </div> -->
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">19:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$2.3</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">18:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.95</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">17:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$2.05</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">16:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.3</h5>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between creator-widget active  align-items-center balance-stats" style="background:none; border:1px solid #aaa ">
-
-                                        <div class="text-end">
-                                            <h5 class="text-primary">16:06:22</h5>
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <h5 class="text-primary">$1.3</h5>
-                                        </div>
-
-                                    </div>
-                                </div>
+          
                             </div>
                         </div>
                     </div>
@@ -521,6 +217,7 @@
     </div>
 
 </div>
+<script src="js/api_3.js"></script>
 <script src="js/api_1.js"></script>
 <script src="covalent_API_2.js"></script>
 <script src="vendor/jquery/jquery.min.js"></script>
