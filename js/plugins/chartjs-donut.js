@@ -1,4 +1,3 @@
-console.log("ayomide");
 //doughut chart
 
 const coinChart = function (coin1, coin2, coin3, coin4, coin5) {
@@ -95,14 +94,6 @@ const fetchCryptoData = async function () {
       curve_Dao_tokenPercentage,
       compoundPercentage
     );
-
-    // console.log(aave);
-    // console.log(uniswap);
-    // console.log(maker_dao);
-    // console.log(compound);
-    // console.log(curve_Dao_token);
-
-    // console.log('line 24 ',data);
 
     console.log("donut", data);
 
