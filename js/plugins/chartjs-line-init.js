@@ -121,8 +121,8 @@ const uniswapLineGraph = async function () {
     });
     lineChart(date, price);
 
-    console.log("data and price list", String(date), price);
-    console.log("price history", data);
+    // console.log("data and price list", String(date), price);
+    // console.log("price history", data);
   } catch (err) {
     console.error(err);
   }
