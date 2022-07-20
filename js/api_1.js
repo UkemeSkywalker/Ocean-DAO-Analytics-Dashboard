@@ -36,7 +36,6 @@ const fetchData = async function (chainId, address) {
 
 fetchData(blockchainChainId, demoAddress);
 
-
 function showData(results) {
   let dataCenter = document.getElementById("data-center");
   results.slice(2, 22).forEach((data, index) => {
@@ -103,4 +102,7 @@ function totalMarketCap(results) {
 `;
   totalContainer.innerHTML += renderData;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a8bb64a92eefb6ae4cada16d1ca33fc57ae24f50
