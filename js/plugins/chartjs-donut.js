@@ -96,11 +96,11 @@ const fetchCryptoData = async function () {
       compoundPercentage
     );
 
-    console.log(aave);
-    console.log(uniswap);
-    console.log(maker_dao);
-    console.log(compound);
-    console.log(curve_Dao_token);
+    // console.log(aave);
+    // console.log(uniswap);
+    // console.log(maker_dao);
+    // console.log(compound);
+    // console.log(curve_Dao_token);
 
     // console.log('line 24 ',data);
 
