@@ -5,30 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!---- Website Information ---->
     <title>OCEAN DAO ANALYTICS</title>
     <meta
       name="description"
-      content="Discover, Access, Interact with the Awesomeness of DAO With The Covalent API"
-    />
-
-    <!-- Favicon icon -->
+      content="Discover, Access, Interact with the Awesomeness of DAO With The Covalent API"/>
     <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/OceanDAO.png"
-    />
+      rel="icon" type="image/png" sizes="16x16" href="images/OceanDAO.png"/>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body class="@@dashboard">
     <div id="preloader">
       <i>.</i>
       <i>.</i>
       <i>.</i>
     </div>
-
     <div id="main-wrapper">
       <div class="header">
         <div class="container">
@@ -49,17 +39,8 @@
                   </div>
                 </div>
                 <div class="header-right">
-                  <a
-                    class="btn btn-secondary me-3"
-                    id="userAddress"
-                    onclick="connect(); "
-                  >
-                    Connect Wallet
-                  </a>
-                  <div
-                    class="dark-light-toggle theme-switch"
-                    onclick="themeToggle()"
-                  >
+                  <a class="btn btn-secondary me-3" id="userAddress" onclick="connect(); ">Connect Wallet</a>
+                  <div class="dark-light-toggle theme-switch" onclick="themeToggle()">
                     <span class="dark"><i class="ri-moon-line"></i></span>
                     <span class="light"><i class="ri-sun-line"></i></span>
                   </div>
@@ -111,6 +92,12 @@
                 <span class="nav-text">TOKEN PRICE</span>
               </a>
             </li>
+            <li>
+              <a href="graph.html">
+                <span><i class="ri-star-line"></i></span>
+                <span class="nav-text">DAO Pool Information</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -119,9 +106,7 @@
         <div class="container">
           <div class="page-title">
             <div class="col-xxl-6">
-              <div
-                class="promotion d-flex justify-content-between align-items-center"
-              >
+              <div class="promotion d-flex justify-content-between align-items-center">
                 <div class="promotion-detail">
                   <h1 class="text-white mb-3">OCEAN DAO ANALYTICS</h1>
                   <h3>
@@ -149,13 +134,7 @@
                         <div class=""></div>
                       </div>
                     </div>
-                    <canvas
-                      height="280"
-                      width="670"
-                      id="activity"
-                      style="display: block; width: 670px; height: 280px"
-                      class="chartjs-render-monitor"
-                    ></canvas>
+                    <canvas height="280" width="670" id="activity" style="display: block; width: 670px; height: 280px" class="chartjs-render-monitor" ></canvas>
                   </div>
                 </div>
               </div>
@@ -173,13 +152,7 @@
                         <div class=""></div>
                       </div>
                     </div>
-                    <canvas
-                      height="280"
-                      width="295"
-                      id="most-selling-items"
-                      class="chartjs-render-monitor"
-                      style="display: block; width: 295px; height: 280px"
-                    ></canvas>
+                    <canvas height="280" width="295" id="most-selling-items" class="chartjs-render-monitor" style="display: block; width: 295px; height: 280px"></canvas>
                   </div>
                 </div>
               </div>
@@ -205,17 +178,10 @@
                   </h6>
                 </div>
                 <div class="card-body p-0 bs-0 bg-transparent">
-                  <div
-                    class="row col-xl-12"
-                    style="margin-left: 0px; margin-right: 0px"
-                  >
+                  <div class="row col-xl-12" style="margin-left: 0px; margin-right: 0px" >
                     <div class="token-items col-lg-2">
                       <div class="col-xl-4">
-                        <img
-                          src="/images/aapecoin.png"
-                          width="60"
-                          class="me-3 rounded"
-                        />
+                        <img src="/images/aapecoin.png" width="60" class="me-3 rounded" />
                       </div>
                       <div class="col-xl-7">
                         <h5>Aape Coin</h5>
@@ -223,11 +189,7 @@
                     </div>
                     <div class="token-items col-lg-2">
                       <div class="col-xl-4">
-                        <img
-                          src="/images/uniswap.png"
-                          width="60"
-                          class="me-3 rounded"
-                        />
+                        <img src="/images/uniswap.png" width="60" class="me-3 rounded" />
                       </div>
                       <div class="col-xl-7">
                         <h5>uniswap</h5>
@@ -236,11 +198,7 @@
 
                     <div class="token-items col-lg-2">
                       <div class="col-xl-4">
-                        <img
-                          src="/images/maker.png"
-                          width="60"
-                          class="me-3 rounded"
-                        />
+                        <img src="/images/maker.png" width="60" class="me-3 rounded" />
                       </div>
                       <div class="col-xl-7">
                         <h5>Maker</h5>
@@ -249,30 +207,21 @@
 
                     <div class="token-items col-lg-2">
                       <div class="col-xl-4">
-                        <img
-                          src="/images/aave.png"
-                          width="60"
-                          class="me-3 rounded"
-                        />
+                        <img src="/images/aave.png" width="60" class="me-3 rounded" />
                       </div>
                       <div class="col-xl-7">
                         <h5>Aave</h5>
                       </div>
                     </div>
-
                     <div class="token-items col-lg-2">
                       <div class="col-xl-4">
-                        <img
-                          src="/images/dash.png"
-                          width="60"
-                          class="me-3 rounded"
-                        />
+                        <img src="/images/dash.png" width="60" class="me-3 rounded" />
                       </div>
                       <div class="col-xl-7">
                         <h5>Dash</h5>
                       </div>
                     </div>
-                    <a class="btn btn-secondary">View Full Analysis</a>
+                    <a class="btn btn-secondary" href="token_price.html">View Full Analysis</a>
                   </div>
                 </div>
               </div>
@@ -318,8 +267,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div id="new_list"></div> -->
     </div>
     <script src="js/api_1.js"></script>
     <script src="js/api_3.js"></script>
@@ -331,7 +278,6 @@
     <script src="js/plugins/chartjs-line-init.js"></script>
     <script src="js/plugins/chartjs-donut.js"></script>
     <script src="js/scripts.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
     <script src="js/connect_wallet.js"></script>
   </body>

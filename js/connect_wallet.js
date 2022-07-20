@@ -11,7 +11,7 @@ async function connect() {
 
      console.log(`Wallet: ${walletAddress}`);
      if(walletAddress){
-        alert("connect succesfully")
+        alert("connection succesfull")
         userAddress.innerHTML = walletAddress;
      }
         
