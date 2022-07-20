@@ -13,9 +13,9 @@ const fetchUniswapData = async function () {
     console.log("uniswap data", data);
 
     const exchangeInformation = data.map((data) => {
-      let swap_count_total = 0;
-      let total_liquidity = 0;
-      let total_supply = 0;
+      // let swap_count_total = 0;
+      // let total_liquidity = 0;
+      // let total_supply = 0;
 
       return {
         swap_count: data.swap_count_24h,
@@ -77,12 +77,12 @@ const displayUI = function (results) {
                         <h5 class="text-muted">quote rate       ${data.contract_token_price}</h5>
                     </div>
                     <div class="text-end">
-                        <p class="mb-2">Volume <strong class="text-primary">Out
+                        <p class="mb-2">Volume <strong class="text-danger">Out
                               
                             </strong>       ${data.volume_out_24h}</p>
-                        <h5 class="text-muted">Volume
-                            In      ${data.volume_in_24h}
-                        </h5>
+                        <p class="mb-2">Volume <strong class="text-primary">
+                            In </strong>    ${data.volume_in_24h}
+                        </p>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-3"><a href="#"
@@ -93,3 +93,5 @@ const displayUI = function (results) {
     container.innerHTML += renderData;
   });
 };
+
+console.log("festus");
