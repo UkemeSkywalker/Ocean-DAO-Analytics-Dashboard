@@ -1,4 +1,4 @@
-# DAO-Analytics-Dashboard
+# DAO-Analytics-Dashboard: https://ocean-dao-analytics.web.app/index.html
 Covalent road to web3 Hackathon
 https://ruddy-hugger-0e6.notion.site/Hackathon-in-a-box-d8703a12d8f14c4d95cc4148923c5892
 
